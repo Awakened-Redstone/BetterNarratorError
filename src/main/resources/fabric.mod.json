@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "betternarratorerror",
+	"version": "${version}",
+	"name": "BetterNarratorError",
+	"description": "Stop the narrator from showing a giant error on the logs",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"sources": "https://github.com/AwakenedRedstone/BetterNarratorError"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/betternarratorerror/icon.png",
+	"environment": "*",
+	"mixins": [
+		"betternarratorerror.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": ">=1.20.1",
+		"java": ">=17"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

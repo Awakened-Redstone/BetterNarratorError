@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "betternarratorerror.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"NarratorLinuxMixin",
+		"NarratorLinuxMixin$FliteLibraryMixin",
+		"NarratorMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
