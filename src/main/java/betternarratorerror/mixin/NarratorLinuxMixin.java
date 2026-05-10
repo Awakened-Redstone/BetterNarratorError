@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.At;
 public class NarratorLinuxMixin {
     @Mixin(targets = {"com.mojang.text2speech.NarratorLinux$FliteLibrary", "com.mojang.text2speech.NarratorLinux$FliteLibrary$CmuUsKal16"})
     private static class FliteLibraryMixin {
-        @WrapOperation(at = @At(value = "NEW", target = "(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/mojang/text2speech/Narrator$InitializeException;"), method = "loadNative", remap = false)
+        @WrapOperation(at = @At(value = "NEW", target = "(Ljava/lang/String;Ljava/lang/Throwable;)Lcom/mojang/text2speech/Narrator$InitializeException;"), method = "loadNative")
         private static Narrator.InitializeException pleaseDontGenerateAHugeStackTraceThanks(String message, Throwable cause, Operation<Narrator.InitializeException> original) {
             Throwable newCause;
 
