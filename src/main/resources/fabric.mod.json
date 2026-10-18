@@ -3,7 +3,7 @@
 	"id": "betternarratorerror",
 	"version": "${version}",
 	"name": "Better Narrator Error",
-	"description": "Stop the narrator from showing a giant error on the logs",
+	"description": "Stop the Narrator from printing huge errors without disabling it",
 	"authors": [
 		"Awakened Redstone"
 	],
@@ -18,8 +18,8 @@
 		"betternarratorerror.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.10",
-		"minecraft": ">=26.1",
+		"fabricloader": ">=${loader}",
+		"minecraft": ">=${minecraft}",
 		"java": ">=17"
 	}
 }
